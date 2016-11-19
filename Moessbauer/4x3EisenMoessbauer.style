@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<wissoftStyles version="0.5">
+<comment>http://www.wissel-gmbh.de</comment>
+<timestamp>18.11.2016 10:12:56</timestamp>
+<graphcolor>255 0 0 0</graphcolor>
+<chartcolor>255 255 255 255</chartcolor>
+<xAxisColor>255 0 0 0</xAxisColor>
+<yAxisColor>255 0 0 0</yAxisColor>
+<graphStyle>Default</graphStyle>
+<cursorPos>0</cursorPos>
+<units>Channels</units>
+</wissoftStyles>
