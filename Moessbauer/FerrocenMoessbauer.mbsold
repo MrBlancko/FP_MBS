@@ -31,7 +31,7 @@ Errors Hesse
 #Nucleus Egamma g12 g32 Q mass
 ###############################################################
 RUN
-"E:\FPraktikum\2016\161118\FerrocenMoessbauer.fld" 1
+"FerrocenMoessbauer.fld" 1
 ###############################################################
 PLOT
 runs 1
@@ -40,9 +40,9 @@ runs 1
 
 FITDATA
            T[K]	              B	          Error	            Vzz	          Error	            eta	          Error	          theta	          Error	            phi	          Error	             CS	          Error	          omega	          Error	             I0	          Error	             A0	          Error	           beta	          Error	          gamma	          Error	
-           1.00	           0.00	          -1.00	        -145.16	           0.46	         0.0000	        -1.0000	           0.00	          -1.00	           0.00	          -1.00	        0.32996	        0.00380	        0.11834	        0.00599	       10142.64	           5.78	         609.97	          24.88	        59.7949	         3.0000	           0.00	          -1.00	
+           1.00	           0.00	          -1.00	        -145.16	           2.00	         0.0000	        -1.0000	           0.00	          -1.00	           0.00	          -1.00	        0.32996	        0.02000	        0.11834	        0.01000	       10142.64	         101.45	         609.97	           6.22	        60.0309	         3.0000	           0.00	          -1.00	
 ###################
 FITSTATISTICS
-Total chi2: 503.584941
+Total chi2: 503.570522
            T[K]	       chi2_red	 K-S-confidence	       MEM-diff	     MEM-lambda	 MEM-iterations
-           1.00	           1.01	          0.997	          0.000	          0.000	              0
+           1.00	           1.01	          0.996	          0.000	          0.000	              0
