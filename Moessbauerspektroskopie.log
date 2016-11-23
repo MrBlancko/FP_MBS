@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.14)  22 NOV 2016 17:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.14)  23 NOV 2016 17:18
 entering extended mode
 **./Moessbauerspektroskopie.tex
 (Moessbauerspektroskopie.tex
@@ -2615,149 +2615,182 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `superscript' on input line 235.
 
-<MoessbauerEisen4x3.png, id=186, 1951.29pt x 993.7125pt>
+<Moessfitstandard.png, id=186, 534.99875pt x 359.3425pt>
+File: Moessfitstandard.png Graphic file (type png)
+ <use Moessfitstandard.png>
+Package pdftex.def Info: Moessfitstandard.png used on input line 240.
+(pdftex.def)             Requested size: 167.29967pt x 112.37102pt.
+
+<Winkel.png, id=187, 1173.38374pt x 531.9875pt>
+File: Winkel.png Graphic file (type png)
+ <use Winkel.png>
+Package pdftex.def Info: Winkel.png used on input line 245.
+(pdftex.def)             Requested size: 209.12778pt x 94.81198pt.
+
+<MoessbauerEisen4x3.png, id=188, 1951.29pt x 993.7125pt>
 File: MoessbauerEisen4x3.png Graphic file (type png)
  <use MoessbauerEisen4x3.png>
-Package pdftex.def Info: MoessbauerEisen4x3.png used on input line 240.
+Package pdftex.def Info: MoessbauerEisen4x3.png used on input line 254.
 (pdftex.def)             Requested size: 209.12778pt x 106.48842pt.
 
-<WerteEisen4x3.png, id=187, 587.19376pt x 270.00874pt>
+<WerteEisen4x3.png, id=189, 587.19376pt x 270.00874pt>
 File: WerteEisen4x3.png Graphic file (type png)
  <use WerteEisen4x3.png>
-Package pdftex.def Info: WerteEisen4x3.png used on input line 245.
+Package pdftex.def Info: WerteEisen4x3.png used on input line 259.
 (pdftex.def)             Requested size: 167.29967pt x 76.92856pt.
 
-<MoessbauerEisen25.png, id=188, 1943.26pt x 993.7125pt>
+<MoessbauerEisen25.png, id=190, 1943.26pt x 993.7125pt>
 File: MoessbauerEisen25.png Graphic file (type png)
  <use MoessbauerEisen25.png>
-Package pdftex.def Info: MoessbauerEisen25.png used on input line 255.
+Package pdftex.def Info: MoessbauerEisen25.png used on input line 270.
 (pdftex.def)             Requested size: 209.12778pt x 106.92815pt.
 
-<WerteEisen25.png, id=189, 587.19376pt x 269.005pt>
+<WerteEisen25.png, id=191, 587.19376pt x 269.005pt>
 File: WerteEisen25.png Graphic file (type png)
  <use WerteEisen25.png>
-Package pdftex.def Info: WerteEisen25.png used on input line 260.
+Package pdftex.def Info: WerteEisen25.png used on input line 275.
 (pdftex.def)             Requested size: 167.29967pt x 76.64258pt.
 
-<MoessbauerEisen25MagnetGerade.png, id=190, 1951.29pt x 996.72375pt>
+<MoessbauerEisen25MagnetGerade.png, id=192, 1951.29pt x 996.72375pt>
 File: MoessbauerEisen25MagnetGerade.png Graphic file (type png)
  <use MoessbauerEisen25MagnetGerade.png>
-Package pdftex.def Info: MoessbauerEisen25MagnetGerade.png used on input line 270.
+Package pdftex.def Info: MoessbauerEisen25MagnetGerade.png used on input line 286.
 (pdftex.def)             Requested size: 209.12778pt x 106.81111pt.
 
-<WerteEisen25MagnetGerade.png, id=191, 588.1975pt x 270.00874pt>
+<WerteEisen25MagnetGerade.png, id=193, 588.1975pt x 270.00874pt>
 File: WerteEisen25MagnetGerade.png Graphic file (type png)
  <use WerteEisen25MagnetGerade.png>
-Package pdftex.def Info: WerteEisen25MagnetGerade.png used on input line 275.
+Package pdftex.def Info: WerteEisen25MagnetGerade.png used on input line 291.
 (pdftex.def)             Requested size: 167.29967pt x 76.79672pt.
 
-<MoessbauerEisen25MagnetRing.png, id=192, 1957.3125pt x 993.7125pt>
+<MoessbauerEisen25MagnetRing.png, id=194, 1957.3125pt x 993.7125pt>
 File: MoessbauerEisen25MagnetRing.png Graphic file (type png)
  <use MoessbauerEisen25MagnetRing.png>
-Package pdftex.def Info: MoessbauerEisen25MagnetRing.png used on input line 285.
+Package pdftex.def Info: MoessbauerEisen25MagnetRing.png used on input line 302.
 (pdftex.def)             Requested size: 209.12778pt x 106.17pt.
 
-<WerteEisen25MagnetRing.png, id=193, 589.20125pt x 268.00125pt>
+<WerteEisen25MagnetRing.png, id=195, 589.20125pt x 268.00125pt>
 File: WerteEisen25MagnetRing.png Graphic file (type png)
  <use WerteEisen25MagnetRing.png>
-Package pdftex.def Info: WerteEisen25MagnetRing.png used on input line 290.
+Package pdftex.def Info: WerteEisen25MagnetRing.png used on input line 307.
 (pdftex.def)             Requested size: 167.29967pt x 76.09488pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 297.
+(babel)             in language  on input line 326.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 297.
+(babel)             in language  on input line 326.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 326.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 326.
+ [8]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 335.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 335.
 
-<MoessbauerFerrocen.png, id=194, 1953.2975pt x 995.72pt>
+<MoessbauerFerrocen.png, id=217, 1953.2975pt x 995.72pt>
 File: MoessbauerFerrocen.png Graphic file (type png)
  <use MoessbauerFerrocen.png>
-Package pdftex.def Info: MoessbauerFerrocen.png used on input line 302.
+Package pdftex.def Info: MoessbauerFerrocen.png used on input line 340.
 (pdftex.def)             Requested size: 209.12778pt x 106.5972pt.
 
-<WerteFerrocen.png, id=195, 537.00626pt x 358.33875pt>
+<WerteFerrocen.png, id=218, 537.00626pt x 358.33875pt>
 File: WerteFerrocen.png Graphic file (type png)
  <use WerteFerrocen.png>
-Package pdftex.def Info: WerteFerrocen.png used on input line 307.
+Package pdftex.def Info: WerteFerrocen.png used on input line 345.
 (pdftex.def)             Requested size: 167.29967pt x 111.63611pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 314.
+(babel)             in language  on input line 353.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 314.
+(babel)             in language  on input line 353.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 353.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 353.
+ [9]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 354.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 354.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 360.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 360.
 
-Overfull \hbox (7.34207pt too wide) in paragraph at lines 323--326
+Overfull \hbox (7.34207pt too wide) in paragraph at lines 363--366
 []\T1/lmr/m/n/10.95 (-20) https://tu-dresden.de/mn/physik/ifp/ressourcen/dateien/lehre/praktika/mbs?lang=de
  []
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 337.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 337.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 337.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 337.
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 338--341
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--381
 []\T1/lmr/m/n/10.95 (+20) https://de.wikipedia.org/wiki/Doppler-Effekt#Doppler-Effekt_ohne_Medium
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 344.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 384.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 344.
+(babel)             in language  on input line 384.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 344.
+(babel)             in language  on input line 384.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 344.
+(babel)             in language  on input line 384.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 344.
-[9]
+(babel)             in language  on input line 384.
+[10]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 344.
+(babel)             in language  on input line 384.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 344.
+(babel)             in language  on input line 384.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 344.
+(babel)             in language  on input line 384.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 344.
- [10 <./CoSpektrum.png> <./MoessbauerEisen4x3.png> <./WerteEisen4x3.png> <./MoessbauerEisen25.png> <./WerteEisen25.png>]
+(babel)             in language  on input line 384.
+ [11 <./CoSpektrum.png> <./Moessfitstandard.png> <./Winkel.png> <./MoessbauerEisen4x3.png> <./WerteEisen4x3.png>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 344.
+(babel)             in language  on input line 384.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 344.
+(babel)             in language  on input line 384.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 344.
+(babel)             in language  on input line 384.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 344.
- [11 <./MoessbauerEisen25MagnetGerade.png> <./WerteEisen25MagnetGerade.png> <./MoessbauerEisen25MagnetRing.png> <./Werte
-Eisen25MagnetRing.png> <./MoessbauerFerrocen.png> <./WerteFerrocen.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 344.
+(babel)             in language  on input line 384.
+
+[12 <./MoessbauerEisen25.png> <./WerteEisen25.png> <./MoessbauerEisen25MagnetGerade.png> <./WerteEisen25MagnetGerade.png
+> <./MoessbauerEisen25MagnetRing.png> <./WerteEisen25MagnetRing.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 384.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 384.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 384.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 384.
+ [13 <./MoessbauerFerrocen.png> <./WerteFerrocen.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 384.
  (Moessbauerspektroskopie.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 344.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 344.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 384.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 384.
 Package rerunfilecheck Info: File `Moessbauerspektroskopie.out' has not changed.
-(rerunfilecheck)             Checksum: AA305692E5002974B111B908976B2F6D;1268.
+(rerunfilecheck)             Checksum: A36940339063A9E828C85167C2D425C0;1268.
  ) 
 Here is how much of TeX's memory you used:
- 23540 strings out of 493334
- 435019 string characters out of 3147000
- 616214 words of memory out of 3000000
- 26626 multiletter control sequences out of 15000+200000
- 106934 words of font info for 120 fonts, out of 3000000 for 9000
+ 23573 strings out of 493334
+ 435504 string characters out of 3147000
+ 619005 words of memory out of 3000000
+ 26643 multiletter control sequences out of 15000+200000
+ 107349 words of font info for 125 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,13n,52p,10438b,1098s stack positions out of 5000i,500n,10000p,200000b,50000s
-{P:/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{P:/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{P:/MiKTeX/fonts/enc/dvips/lm/lm-
-rm.enc}{P:/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{P:/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{P:/MiKTeX/fonts/enc/dvips/lm
-/lm-mathit.enc}<P:/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><P:/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><P:/MiKTeX/fonts/
-type1/public/lm/lmex10.pfb><P:/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><P:/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><P:/Mi
-KTeX/fonts/type1/public/lm/lmr10.pfb><P:/MiKTeX/fonts/type1/public/lm/lmr12.pfb><P:/MiKTeX/fonts/type1/public/lm/lmr6.pf
-b><P:/MiKTeX/fonts/type1/public/lm/lmr8.pfb><P:/MiKTeX/fonts/type1/public/lm/lmro10.pfb><P:/MiKTeX/fonts/type1/public/lm
-/lmssbx10.pfb><P:/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><P:/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Moessbauerspektroskopie.pdf (11 pages, 1404863 bytes).
+{P:/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{P:/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{P:/MiKTeX/fonts/enc/dvips/lm/
+lm-ts1.enc}{P:/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{P:/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{P:/MiKTeX/fonts/enc/dvips/lm
+/lm-mathex.enc}<P:/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><P:/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><P:/MiKTeX/fonts/
+type1/public/lm/lmex10.pfb><P:/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><P:/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><P:/Mi
+KTeX/fonts/type1/public/lm/lmmi8.pfb><P:/MiKTeX/fonts/type1/public/lm/lmr10.pfb><P:/MiKTeX/fonts/type1/public/lm/lmr12.p
+fb><P:/MiKTeX/fonts/type1/public/lm/lmr6.pfb><P:/MiKTeX/fonts/type1/public/lm/lmr8.pfb><P:/MiKTeX/fonts/type1/public/lm/
+lmro10.pfb><P:/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><P:/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><P:/MiKTeX/fonts/ty
+pe1/public/lm/lmsy6.pfb><P:/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
+Output written on Moessbauerspektroskopie.pdf (13 pages, 1615903 bytes).
 PDF statistics:
- 295 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
- 35546 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 335 PDF objects out of 1000 (max. 8388607)
+ 61 named destinations out of 1000 (max. 500000)
+ 35556 words of extra memory for PDF output out of 35830 (max. 10000000)
 
