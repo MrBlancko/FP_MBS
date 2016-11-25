@@ -38,7 +38,7 @@ separate-uncertainty, % Unsicherheiten seperat
 \usepackage{microtype}  % Mikrotypographie
 \usepackage{booktabs}  %schönere Tabellen
 \usepackage{multirow}
-\usepackage[toc]{multitoc}  %mehrspaltiges Inhaltsverzeichnis
+%\usepackage[toc]{multitoc}  %mehrspaltiges Inhaltsverzeichnis
 \usepackage{csquotes} % Anführungszeichen mit \enquote
 \usepackage{subcaption}  % Unterabbildungen a,b,c,…
 \usepackage{enumitem}  % Listen anpassen
@@ -312,27 +312,79 @@ Für die Antriebsspannung $U_{Antrieb}$ wurde der Wert $(190.5 \pm 0.2)$\,mV ein
 	\label{fig:magnetring}
 \end{figure}
 
+\subsection{Anpassungen des Modells für Eisen}
+
+\subsubsection{Grundmodell}
+
 Für die Auswertung wird das Programm Moessfit verwendet. Eine Ansicht der standardmäßig verwendeten Fitparamter findet sich in Bild \ref{fig:moessfitstandard}. Die Parameter beschreiben folgende Dinge:
 \begin{itemize}
-\item \textbf{B:} Betrag des lokalen Magnetfelds
-\item \textbf{Vzz:} z-Komponente des lokalen elektrischen Felds
-\item \textbf{eta:} (Vxx-Vyy)/Vzz, entspricht der Asymmetrie des E-Feldes
-\item \textbf{theta:} Winkel zwischen B-Feld und z-Achse, siehe Bild \ref{fig:winkel}
-\item \textbf{phi:} Winkel zwischen B-Feld und x-Achse, siehe Bild \ref{fig:winkel}
-\item \textbf{CS:} Isomerieverschiebung in Bezug zur Isomerieverschiebung der Quelle (hier als 0 gesetzt)
-\item \textbf{omega:} Breite der Linien/Peaks
-\item \textbf{I0:} Basis-Linie der Intensität des Fits
-\item \textbf{A0:} Fläche unter dem Fit-Graphen
-\item \textbf{beta:} Texturwinkel zwischen einfallenden Photonen und z-Achse, siehe Bild \ref{fig:winkel}
-\item \textbf{gamma:} Texturwinkel zwischen einfallenden Photonen und B-Feld, siehe Bild \ref{fig:winkel}
+\item \textit{B:} Betrag des lokalen Magnetfelds
+\item \textit{Vzz:} z-Komponente des lokalen elektrischen Felds
+\item \textit{eta:} (Vxx-Vyy)/Vzz, entspricht der Asymmetrie des E-Feldes
+\item \textit{theta:} Winkel zwischen B-Feld und z-Achse, siehe Bild \ref{fig:winkel}
+\item \textit{phi:} Winkel zwischen B-Feld und x-Achse, siehe Bild \ref{fig:winkel}
+\item \textit{CS:} Isomerieverschiebung in Bezug zur Isomerieverschiebung der Quelle (hier als 0 gesetzt)
+\item \textit{omega:} Breite der Linien/Peaks
+\item \textit{I0:} Basis-Linie der Intensität des Fits
+\item \textit{A0:} Fläche unter dem Fit-Graphen
+\item \textit{beta:} Texturwinkel zwischen einfallenden Photonen und z-Achse, siehe Bild \ref{fig:winkel}
+\item \textit{gamma:} Texturwinkel zwischen einfallenden Photonen und B-Feld, siehe Bild \ref{fig:winkel}
 \end{itemize}
-Um die Bilder \ref{fig:eisen4x3}, \ref{fig:eisen25}, \ref{fig:magnetgerade} und\ref{fig:magnetring} auszuwerten, muss das verwendete Modell und damit die Fitparameter angepasst werden. Dafür ist zunächst die Beobachtung hilfreich, das wir bei allen Diagrammen 6 Peaks sehen. Diese Peaks entsprechen sehr gut denen in Bild \ref{fig:graphmoessbauer}(a). Es ist also davon auszugehen, dass für die Auswertung die Einflüsse des elektrischen Feldes weitestgehend ignoriert werden können - damit werden die Parameter Vzz und eta nicht mehr benötigt. Mit der Definition, dass das betrachtete B-Feld entlang der z-Achse verläuft, können auch theta und phi 0 gesetzt und in Folge ignoriert werden. Mit diesen Definitionen spielt gamma keine Rolle mehr und kann ignoriert werden. Benötigt werden also weiterhin: B, CS, omega, I0, A0 und beta. Nun muss betrachtet werden, was gemessen werden soll: Gesucht werden die Einflüsse der Probendicke und der Ausrichtung der Atome im Eisen. Um den Einfluss der Probendicke deutlicher zu machen, wird statt A0 der Parameter ta gewählt, der für das Transmissionsintegral steht. Dieses wird vom Programm berechnet und beschreibt direkt den Einfluss der Probendicke: Je größer ta wird, desto stärker absorbieren die kleinen Peaks/Linien im Diagramm im Vergleich zu den großen. Für weitere Berechnungen schließt das Programm aus dem ta auf das A0. Um die  Ausrichtung der Eisen-Atome deutlich zu machen, wird beta transformiert zu fraglong, was für den Anteil der Eisen-Atome steht, die parallel zum Strahl der Photonen stehen. Im Anschluss werden die Atome, die parallel zum Photonenstrahl stehen und die, die senkrecht dazu stehen, getrennt betrachtet: Ihr Anteil an A0 des Graphen wird getrennt ausgerechnet und anschließend addiert. Damit wird der mittlere Winkel der Atome beta nicht mehr gebraucht. Dieses Modell beschreibt bereits einen großen Teil der Daten, hat aber noch eine Schwäche: Bei der Betrachtung des Mößbauerspektrums der mit einem äußeren Magnetfeld ausgerichteten Eisen-Atome zeigt sich, dass die mittleren Peaks vom Modell als kleiner berechnet werden, als sie im Bild zu sehen sind. Grund dafür ist die Annahme, dass das Magnetfeld überall konstant ist, durch das Anlegen eines äußeren Feldes ist diese Annahme jedoch nicht mehr richtig. Daher werden zwei zusätzliche Parameter eingeführt, die eine Beschreibung des realen Magnetfeldes als Normalverteilung erlauben: B0 und sigma. Formel \ref{for:normal} zeigt die Nutzung der Parameter. Für B0 wird das normale magnetische Feld im Eisen, also \SI{33.3}{\tesla}, gewählt.
+
+\subsubsection{Anpassung auf ein rein magnetisches Feld}
+
+Um die Bilder \ref{fig:eisen4x3}, \ref{fig:eisen25}, \ref{fig:magnetgerade} und \ref{fig:magnetring} auszuwerten, muss das verwendete Modell und damit die Fitparameter angepasst werden. Dafür ist zunächst die Beobachtung hilfreich, das wir bei allen Diagrammen 6 Peaks sehen. Dabei sind die Peaks in der Größe geordnet: Die größten liegen außen, die kleinsten innen. Diese Peaks entsprechen also sehr gut denen in Bild \ref{fig:graphmoessbauer}(a). Es ist also davon auszugehen, dass für die Auswertung die Einflüsse des elektrischen Feldes weitestgehend ignoriert werden können - damit werden die Parameter \textit{Vzz} und \textit{eta} nicht mehr benötigt. Mit der Definition, dass das betrachtete B-Feld entlang der z-Achse verläuft, können auch \textit{theta} und \textit{phi} auf null gesetzt und in Folge ignoriert werden. Mit diesen Definitionen spielt \textit{gamma} keine Rolle mehr und kann ignoriert werden. Benötigt werden also weiterhin: \textit{B}, \textit{CS}, \textit{omega}, \textit{I0}, \textit{A0} und \textit{beta}. 
+
+\subsubsection{Einfluss der Probendicke}
+
+Nun muss betrachtet werden, was gemessen werden soll: Gesucht werden die Einflüsse der Probendicke und der Ausrichtung der Magnetfelder der Atome im Eisen. Um den Einfluss der Probendicke deutlicher zu machen, liefert Moessfit die Möglichkeit, statt der Fläche \textit{A0} das Transmissionsintegral \textit{ta} auszugeben. Dieses beschreibt direkt den Einfluss der Probendicke: Je größer \textit{ta} wird, desto stärker absorbieren die kleinen Peaks im Diagramm im Vergleich zu den großen. Für weitere Berechnungen schließt das Programm aus \textit{ta} auf \textit{A0}. 
+
+\subsubsection{Ausrichtung des Magnetfelds der Atome}
+
+Um die  Ausrichtung der Magnetfelder der Eisen-Atome deutlich zu machen, wird \textit{beta} transformiert zu \textit{fraglong}, was für den Anteil der Eisen-Atome steht, deren Magnetfeld parallel zum Strahl der Photonen steht. Im Anschluss werden die Atome, die parallel zum Photonenstrahl stehen und die, die senkrecht dazu stehen, getrennt betrachtet: Ihr Anteil an \textit{A0} des Graphen wird getrennt ausgerechnet und anschließend addiert. Damit wird der mittlere Winkel der Atome \textit{beta} nicht mehr gebraucht. 
+
+\subsubsection{Variation des Magnetfeldes}
+
+Dieses Modell beschreibt bereits einen großen Teil der Daten, hat aber noch eine Schwäche: Bei der Betrachtung des Mößbauerspektrums der mit einem äußeren Magnetfeld ausgerichteten Eisen-Atome zeigt sich, dass die mittleren Peaks vom Modell als kleiner berechnet werden, als sie im Bild zu sehen sind. Grund dafür ist die Annahme, dass das Magnetfeld überall konstant ist. Durch das Anlegen eines äußeren Feldes ist diese Annahme jedoch nicht mehr richtig. Daher werden zwei zusätzliche Parameter eingeführt, die eine Beschreibung des realen Magnetfeldes als Normalverteilung erlauben: \textit{B0} und \textit{sigma}. Formel \ref{for:normal} zeigt die Nutzung der Parameter. Für \textit{B0} wird das normale magnetische Feld im Eisen, also \SI{33.3}{\tesla}, gewählt.
 \begin{align}
 B_{Feld} = e^{-\frac{B-B0}{2sigma^2}} \label{for:normal}
 \end{align} 
-Für das verwendete Modell werden also die Parameter B, CS, omega, I0, ta, fraglong, B0 und sigma verwendet. Die Ergebnisse können in den Bildern \ref{fig:eisen4x3}, \ref{fig:eisen25}, \ref{fig:magnetgerade} und\ref{fig:magnetring} gesehen werden.
+Für das verwendete Modell werden also die Parameter \textit{B}, \textit{CS}, \textit{omega}, \textit{I0}, \textit{ta}, \textit{fraglong}, \textit{B0} und \textit{sigma} verwendet. Die Ergebnisse können in den Bildern \ref{fig:eisen4x3}, \ref{fig:eisen25}, \ref{fig:magnetgerade} und \ref{fig:magnetring} gesehen werden.
 
-\subsection{Mößbauerspektrum von Ferrocen}
+\subsection{Beschreibung und Erklärung der Beobachtungen für Eisen}
+
+Zunächst werden die Peaks in Moessfit vermessen und mit der Nulllinie \textit{I0} verglichen. Daraus ergeben sich Absorptionsraten für jeden Peak, die in Tabelle \ref{tab:absorption} zu sehen sind.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}[h]{l|c|c|c}
+& Innere Peaks [\%] & Mittlere Peaks [\%] & Äußere Peaks [\%] \\ \hline
+\SI{25}{\micro\meter}-Eisenfolie & 9,99 & 18,65 & 22,17 \\ \hline
+4x\SI{3}{\micro\meter}-Eisenfolie & 5,92 & 14,23 & 14,48 \\ \hline
+\SI{25}{\micro\meter}-Eisenfolie mit geradem Magnet & 7,21 & 18,97 & 15,64 \\ \hline
+\SI{25}{\micro\meter}-Eisenfolie mit Ringmagnet & 10,13 & 21,59 & 22,51
+\end{tabular}
+\caption{Absorption der Peaks in \%}
+\label{tab:absorption}
+\end{table}
+
+Aus der Tabelle sind verschiedene Dinge zu entnehmen:
+\begin{enumerate}
+\item Die \SI{25}{\micro\meter}-Eisenfolie absorbiert stärker als die 4x\SI{3}{\micro\meter}-Eisenfolie
+\item Keine der Folien zeigt das "`normale"' Verhalten, wonach die Linien die Größenverhältnisse 1:2:3 haben sollten. Die \SI{25}{\micro\meter}-Eisenfolie zeigt ein 1:1,87:2,22, die 4x\SI{3}{\micro\meter}-Eisenfolie ein 1:2,40:2,45 Verhalten
+\item Wenn die \SI{25}{\micro\meter}-Eisenfolie mit einem geraden Magneten geordnet wird, sinken die Absorption des ersten und dritten Peaks um 25\,\%, während die des zweiten Peaks annähernd gleich bleibt
+\item Die Beeinflussung der \SI{25}{\micro\meter}-Eisenfolie durch einen Ringmagneten führt zu einer höheren Absorption des zweiten Peaks
+\end{enumerate}
+Der erste Punkt lässt sich über \textit{ta} quantifizieren: Während die \SI{25}{\micro\meter}-Eisenfolie einen \textit{ta}-Wert von 7,4422 aufweist, hat die 4x\SI{3}{\micro\meter}-Eisenfolie einen Wert von 4,5057, also etwa 40\,\% weniger. Diese Abweichung stimmt sehr gut mit den ersten Peaks beider Folien überein, die ebenfalls eine Abweichung von etwa 40\,\% zeigen. Beim dritten Peak ist der Unterschied schon größer, hier ist der Peak der 4x\SI{3}{\micro\meter}-Eisenfolie nur etwa 35\,\% kleiner als der der \SI{25}{\micro\meter}-Eisenfolie. Beim zweiten Peak gibt es einen deutlichen Unterschied, der Peak der 4x\SI{3}{\micro\meter}-Eisenfolie ist nur etwa 24\,\% kleiner als der der \SI{25}{\micro\meter}-Eisenfolie. Für diese Abweichungen dürfte es zwei Gründe geben:
+\begin{itemize}
+\item Da die \SI{25}{\micro\meter}-Eisenfolie mehr als dopplet so dick wie die 4x\SI{3}{\micro\meter}-Eisenfolie ist, tritt der Effekt der nicht zu vernachlässigenden Probendicke deutlicher zu Tage. Die \SI{25}{\micro\meter}-Eisenfolie hat eine Flächendichte von \SI{19.7}{\milli\gram\per\square\centi\meter}, die 4x\SI{3}{\micro\meter}-Eisenfolie \SI{9.4}{\milli\gram\per\square\centi\meter} - berechnet wird dies mit dem Wissen, dass Eisen eine Dichte von \SI{7.874}{\gram\per\cubic\centi\meter} hat \cite{eisen}. Daher wird der dritte Peak bei der \SI{25}{\micro\meter}-Eisenfolie stärker niveliert als bei der 4x\SI{3}{\micro\meter}-Eisenfolie
+\item Dadurch, dass die 4x\SI{3}{\micro\meter}-Eisenfolie aus vier sehr dünnen \SI{3}{\micro\meter}-Folien besteht, ist die Ausrichtung der Magnetfelder der Atome nicht mehr zufällig wie in einer optimalen Pulverprobe. Die Wahrscheinlichkeit, dass die Magnetfelder senkrecht zum Photonenstrahl ausgerichtet sind, ist viel höher. Der Vergleich der fraglong-Werte beider Folien bestätigt diese Überlegung: Während die \SI{25}{\micro\meter}-Eisenfolie einen fraglong-Wert von 0,2733 erreicht, hat die 4x\SI{3}{\micro\meter}-Eisenfolie einen Wert von 0,1702. Bei einem optimalen Pulver müssten alle Raumrichtungen gleich stark vertreten sein, also die Ebene senkrecht zum Strahl 0,6667 und die Linie parallel zum Strahl 0,3333 erreichen. Von fraglong = 0,3333 weichen aber beide Folien ab, die 4x\SI{3}{\micro\meter}-Eisenfolie sogar deutlich
+\end{itemize}
+Diese Erkenntnisse erklären auch direkt den zweiten Punkt: Da beide Folien dicker als die vom Modell erlaubten \SI{1}{\milli\gram\per\square\centi\meter} sind, findet eine signifikante Nivelierung der zweiten und dritten Peaks im Vergleich zum ersten statt. Die große Abweichung des zweiten Peaks der 4x\SI{3}{\micro\meter}-Eisenfolie wiederum lässt sich durch die stärkere Ordnung in der Folie im Vergleich zur \SI{25}{\micro\meter}-Eisenfolie erklären. Der zweite Peak wird also offenbar durch eine stärkere Anordnung in die Richtung senkrecht zum Photonenstrahl verstärkt.
+
+Für die Erklärung der massiven Abweichung der Absorption bei der \SI{25}{\micro\meter}-Eisenfolie mit geradem Magnet im Vergleich zur Absorption der \SI{25}{\micro\meter}-Eisenfolie ohne Magnet muss ebenfalls auf die Ordnung der Magnetfelder geschaut werden: Das äußere Magnetfeld führt zu einem \textit{fraglong}-Wert von 0,0634. Dies führt zu dem im Vergleich zu den anderen beiden Peaks so großen zweiten Peak. Da hier aber mit \SI{25}{\micro\meter}-Eisenfolie ohne Magnet ein Verglich vorliegt, kann vermutet werden, dass die Erhöhung der Ordnung nicht nur zu einer Steigerung der Absorption des zweiten Peaks, sondern auch zu einer Senkung bei den beiden anderen Peaks führt.
+
+\subsection{Anpassungen des Modells für Ferrocen}
 
 \begin{figure}[ht]
 	\centering
@@ -349,7 +401,7 @@ Für das verwendete Modell werden also die Parameter B, CS, omega, I0, ta, fragl
 	\caption{Gefittetes Mößbauerspektrum von Ferrocen}
 \end{figure}
 
-Für Ferrocen muss das Modell eine andere Anpassung erfahren: Bei einer Betrachtung der Messwerte wird deutlich, dass nur zwei Peaks zu sehen sind. Diese stimmen sehr gut mit den beiden Peaks in Bild \ref{fig:graphmoessbauer}(b) überein. Daher liegt der Gedanke nahe, dass hier das Magnetfeld irrelevant ist und dafür das elektrische Feld betrachtet werden muss. Es werden also folgende Anpassungen vorgenommen: B wird aus genanntem Grund auf 0 gesetzt. eta wird ebenfalls als 0 angenommen, da von einem symmetrischen Feld ausgegangen werden kann. Parallel zu den Anpassungen oben können auch theta und phi 0 gesetzt werden, und wie oben wird damit auch gamma irrelevant. Da weder die Probendicke noch die Ausrichtung der Ferrocen-Moleküle weitergehend untersucht werden sollen, können diese Änderungen als vollständig angenommen werden. Es werden also folgende Parameter verwendet: Vzz, CS, omega, I0, A0 und beta.
+Für Ferrocen muss das Modell eine andere Anpassung erfahren: Bei einer Betrachtung der Messwerte wird deutlich, dass nur zwei Peaks zu sehen sind. Diese stimmen sehr gut mit den beiden Peaks in Bild \ref{fig:graphmoessbauer}(b) überein. Daher liegt der Gedanke nahe, dass hier das Magnetfeld irrelevant ist und dafür das elektrische Feld betrachtet werden muss. Es werden also folgende Anpassungen vorgenommen: B wird aus genanntem Grund auf null gesetzt. eta wird ebenfalls als null angenommen, da von einem symmetrischen Feld ausgegangen werden kann. Parallel zu den Anpassungen oben können auch theta und phi null gesetzt werden, und wie oben wird damit auch gamma irrelevant. Da weder die Probendicke noch die Ausrichtung der Ferrocen-Moleküle weitergehend untersucht werden sollen, können diese Änderungen als vollständig angenommen werden. Es werden also folgende Parameter verwendet: Vzz, CS, omega, I0, A0 und beta.
 
 \section{Fazit}
 
@@ -377,6 +429,11 @@ Für Ferrocen muss das Modell eine andere Anpassung erfahren: Bei einer Betracht
 \bibitem{doppler}
   https://de.wikipedia.org/wiki/Doppler-Effekt\#Doppler-Effekt\_ohne\_Medium
 	16.11.2016
+	17:50 Uhr
+	
+\bibitem{eisen}
+  https://de.wikipedia.org/wiki/Eisen
+	24.11.2016
 	17:50 Uhr
 
 \end{thebibliography}
