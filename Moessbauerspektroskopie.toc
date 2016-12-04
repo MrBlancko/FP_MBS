@@ -19,9 +19,10 @@
 \contentsline {subsubsection}{\numberline {3.3.1}Grundmodell}{8}{subsubsection.3.3.1}
 \contentsline {subsubsection}{\numberline {3.3.2}Anpassung auf ein rein magnetisches Feld}{9}{subsubsection.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.3}Einfluss der Probendicke}{9}{subsubsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.4}Ausrichtung des Magnetfelds der Atome}{9}{subsubsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.4}Ausrichtung des Magnetfelds der Atome}{10}{subsubsection.3.3.4}
 \contentsline {subsubsection}{\numberline {3.3.5}Variation des Magnetfeldes}{10}{subsubsection.3.3.5}
 \contentsline {subsection}{\numberline {3.4}Beschreibung und Erkl\IeC {\"a}rung der Beobachtungen f\IeC {\"u}r Eisen}{10}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Anpassungen des Modells f\IeC {\"u}r Ferrocen}{12}{subsection.3.5}
-\contentsline {section}{\numberline {4}Fazit}{12}{section.4}
-\contentsline {section}{\nonumberline Literatur}{12}{section*.13}
+\contentsline {subsection}{\numberline {3.5}Anpassungen des Modells f\IeC {\"u}r Ferrocen}{13}{subsection.3.5}
+\contentsline {section}{\numberline {4}Diskussion}{14}{section.4}
+\contentsline {subsection}{\numberline {4.1}Fazit}{14}{subsection.4.1}
+\contentsline {section}{\nonumberline Literatur}{14}{section*.16}

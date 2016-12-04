@@ -236,23 +236,193 @@ Für die Antriebsspannung $U_{Antrieb}$ wurde der Wert $(190.5 \pm 0.2)$\,mV ein
 
 \begin{figure}[ht]
 	\centering
-	\begin{subfigure}[b]{0.4\textwidth}
-		\includegraphics[width=\textwidth]{Moessfitstandard}
-	  \caption{Standardmäßig verwendete Paramter von Moessfit}
-	  \label{fig:moessfitstandard}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MoessbauerEisen4x3OhneAnpassung}
+	  \caption{Gefittetes Mößbauerspektrum von einer 4x\(\SI{3}{\micro\meter}\)-Eisenfolie}
+	  \label{fig:moess4x3oA}
   \end{subfigure}
-  \begin{subfigure}[b]{0.5\textwidth}
-	  \includegraphics[width=\textwidth]{Winkel}
-	  \caption{Verwendete Winkel im Modell}
-	  \label{fig:winkel}
+  \begin{subfigure}[b]{0.4\textwidth}
+	  \includegraphics[width=\textwidth]{WerteEisen4x3OhneAnpassung}
+	  \caption{Gefittete Werte des Spektrums}
+	  \label{fig:werte4x3oA}
   \end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MoessbauerEisen25OhneAnpassung}
+	  \caption{Gefittetes Mößbauerspektrum von einer \(\SI{25}{\micro\meter}\)-Eisenfolie}
+	  \label{fig:moess25oA}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\textwidth}
+	  \includegraphics[width=\textwidth]{WerteEisen25OhneAnpassung}
+	  \caption{Gefittete Werte des Spektrums}
+	  \label{fig:werte25oA}
+  \end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MoessbauerEisen25MagnetGeradeOhneAnpassung}
+	  \caption{Gefittetes Mößbauerspektrum von einer mit zwei Stabmagneten ausgerichteten \(\SI{25}{\micro\meter}\)-Eisenfolie}
+	  \label{fig:moess25geradeoA}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\textwidth}
+	  \includegraphics[width=\textwidth]{WerteEisen25MagnetGeradeOhneAnpassung}
+	  \caption{Gefittete Werte des Spektrums}
+	  \label{fig:werte25geradeoA}
+  \end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MoessbauerEisen25MagnetRingOhneAnpassung}
+	  \caption{Gefittetes Mößbauerspektrum von einer mit zwei Ringmagneten ausgerichteten \(\SI{25}{\micro\meter}\)-Eisenfolie}
+	  \label{fig:moess25ringoA}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\textwidth}
+	  \includegraphics[width=\textwidth]{WerteEisen25MagnetRingOhneAnpassung}
+	  \caption{Gefittete Werte des Spektrums}
+	  \label{fig:werte25ringoA}
+  \end{subfigure}
+	\caption{Mößbauerspektren und Werte von Eisenfolien ohne Vornahme von Anpassungen}
+	\label{fig:eisenoA}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MoessbauerEisen4x3reinB}
+	  \caption{Gefittetes Mößbauerspektrum von einer 4x\(\SI{3}{\micro\meter}\)-Eisenfolie}
+	  \label{fig:moess4x3nB}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\textwidth}
+	  \includegraphics[width=\textwidth]{WerteEisen4x3reinB}
+	  \caption{Gefittete Werte des Spektrums}
+	  \label{fig:werte4x3nB}
+  \end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MoessbauerEisen25reinB}
+	  \caption{Gefittetes Mößbauerspektrum von einer \(\SI{25}{\micro\meter}\)-Eisenfolie}
+	  \label{fig:moess25nB}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\textwidth}
+	  \includegraphics[width=\textwidth]{WerteEisen25reinB}
+	  \caption{Gefittete Werte des Spektrums}
+	  \label{fig:werte25nB}
+  \end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MoessbauerEisen25MagnetGeradereinB}
+	  \caption{Gefittetes Mößbauerspektrum von einer mit zwei Stabmagneten ausgerichteten \(\SI{25}{\micro\meter}\)-Eisenfolie}
+	  \label{fig:moess25geradenB}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\textwidth}
+	  \includegraphics[width=\textwidth]{WerteEisen25MagnetGeradereinB}
+	  \caption{Gefittete Werte des Spektrums}
+	  \label{fig:werte25geradenB}
+  \end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MoessbauerEisen25MagnetRingreinB}
+	  \caption{Gefittetes Mößbauerspektrum von einer mit zwei Ringmagneten ausgerichteten \(\SI{25}{\micro\meter}\)-Eisenfolie}
+	  \label{fig:moess25ringnB}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\textwidth}
+	  \includegraphics[width=\textwidth]{WerteEisen25MagnetRingreinB}
+	  \caption{Gefittete Werte des Spektrums}
+	  \label{fig:werte25ringnB}
+  \end{subfigure}
+	\caption{Mößbauerspektren und Werte von Eisenfolien mit Einschränkung auf rein magnetisches Feld und definierter Winkelausrichtung}
+	\label{fig:eisennB}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MoessbauerEisen4x3mitTA}
+	  \caption{Gefittetes Mößbauerspektrum von einer 4x\(\SI{3}{\micro\meter}\)-Eisenfolie}
+	  \label{fig:moess4x3ta}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\textwidth}
+	  \includegraphics[width=\textwidth]{WerteEisen4x3mitTA}
+	  \caption{Gefittete Werte des Spektrums}
+	  \label{fig:werte4x3ta}
+  \end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MoessbauerEisen25mitTA}
+	  \caption{Gefittetes Mößbauerspektrum von einer \(\SI{25}{\micro\meter}\)-Eisenfolie}
+	  \label{fig:moess25ta}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\textwidth}
+	  \includegraphics[width=\textwidth]{WerteEisen25mitTA}
+	  \caption{Gefittete Werte des Spektrums}
+	  \label{fig:werte25ta}
+  \end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MoessbauerEisen25MagnetGerademitTA}
+	  \caption{Gefittetes Mößbauerspektrum von einer mit zwei Stabmagneten ausgerichteten \(\SI{25}{\micro\meter}\)-Eisenfolie}
+	  \label{fig:moess25geradeta}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\textwidth}
+	  \includegraphics[width=\textwidth]{WerteEisen25MagnetGerademitTA}
+	  \caption{Gefittete Werte des Spektrums}
+	  \label{fig:werte25geradeta}
+  \end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MoessbauerEisen25MagnetRingmitTA}
+	  \caption{Gefittetes Mößbauerspektrum von einer mit zwei Ringmagneten ausgerichteten \(\SI{25}{\micro\meter}\)-Eisenfolie}
+	  \label{fig:moess25ringta}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\textwidth}
+	  \includegraphics[width=\textwidth]{WerteEisen25MagnetRingmitTA}
+	  \caption{Gefittete Werte des Spektrums}
+	  \label{fig:werte25ringta}
+  \end{subfigure}
+	\caption{Mößbauerspektren und Werte von Eisenfolien mit Einführung von ta}
+	\label{fig:eisenta}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MoessbauerEisen4x3frag}
+	  \caption{Gefittetes Mößbauerspektrum von einer 4x\(\SI{3}{\micro\meter}\)-Eisenfolie}
+	  \label{fig:moess4x3fr}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\textwidth}
+	  \includegraphics[width=\textwidth]{WerteEisen4x3frag}
+	  \caption{Gefittete Werte des Spektrums}
+	  \label{fig:werte4x3fr}
+  \end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MoessbauerEisen25frag}
+	  \caption{Gefittetes Mößbauerspektrum von einer \(\SI{25}{\micro\meter}\)-Eisenfolie}
+	  \label{fig:moess25fr}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\textwidth}
+	  \includegraphics[width=\textwidth]{WerteEisen25frag}
+	  \caption{Gefittete Werte des Spektrums}
+	  \label{fig:werte25fr}
+  \end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MoessbauerEisen25MagnetGeradefrag}
+	  \caption{Gefittetes Mößbauerspektrum von einer mit zwei Stabmagneten ausgerichteten \(\SI{25}{\micro\meter}\)-Eisenfolie}
+	  \label{fig:moess25geradefr}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\textwidth}
+	  \includegraphics[width=\textwidth]{WerteEisen25MagnetGeradefrag}
+	  \caption{Gefittete Werte des Spektrums}
+	  \label{fig:werte25geradefr}
+  \end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MoessbauerEisen25MagnetRingfrag}
+	  \caption{Gefittetes Mößbauerspektrum von einer mit zwei Ringmagneten ausgerichteten \(\SI{25}{\micro\meter}\)-Eisenfolie}
+	  \label{fig:moess25ringfr}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\textwidth}
+	  \includegraphics[width=\textwidth]{WerteEisen25MagnetRingfrag}
+	  \caption{Gefittete Werte des Spektrums}
+	  \label{fig:werte25ringfr}
+  \end{subfigure}
+	\caption{Mößbauerspektren und Werte von Eisenfolien mit Einführung des Ausrichtungsparameters \textit{fraglong}}
+	\label{fig:eisenfr}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
 	\begin{subfigure}[b]{0.5\textwidth}
 		\includegraphics[width=\textwidth]{MoessbauerEisen4x3}
-	  \caption{Mößbauerspektrum}
+	  \caption{Gefittetes Mößbauerspektrum von einer 4x\(\SI{3}{\micro\meter}\)-Eisenfolie}
 	  \label{fig:moess4x3}
   \end{subfigure}
   \begin{subfigure}[b]{0.4\textwidth}
@@ -260,15 +430,9 @@ Für die Antriebsspannung $U_{Antrieb}$ wurde der Wert $(190.5 \pm 0.2)$\,mV ein
 	  \caption{Gefittete Werte des Spektrums}
 	  \label{fig:werte4x3}
   \end{subfigure}
-	\caption{Gefittetes Mößbauerspektrum von 4x\(\SI{3}{\micro\meter}\)-Eisenfolien}
-	\label{fig:eisen4x3}
-\end{figure}
-
-\begin{figure}[ht]
-	\centering
 	\begin{subfigure}[b]{0.5\textwidth}
 		\includegraphics[width=\textwidth]{MoessbauerEisen25}
-	  \caption{Mößbauerspektrum}
+	  \caption{Gefittetes Mößbauerspektrum von einer \(\SI{25}{\micro\meter}\)-Eisenfolie}
 	  \label{fig:moess25}
   \end{subfigure}
   \begin{subfigure}[b]{0.4\textwidth}
@@ -276,15 +440,9 @@ Für die Antriebsspannung $U_{Antrieb}$ wurde der Wert $(190.5 \pm 0.2)$\,mV ein
 	  \caption{Gefittete Werte des Spektrums}
 	  \label{fig:werte25}
   \end{subfigure}
-	\caption{Gefittetes Mößbauerspektrum von einer \(\SI{25}{\micro\meter}\)-Eisenfolie}
-	\label{fig:eisen25}
-\end{figure}
-
-\begin{figure}[ht]
-	\centering
 	\begin{subfigure}[b]{0.5\textwidth}
 		\includegraphics[width=\textwidth]{MoessbauerEisen25MagnetGerade}
-	  \caption{Mößbauerspektrum}
+	  \caption{Gefittetes Mößbauerspektrum von einer mit zwei Stabmagneten ausgerichteten \(\SI{25}{\micro\meter}\)-Eisenfolie}
 	  \label{fig:moess25gerade}
   \end{subfigure}
   \begin{subfigure}[b]{0.4\textwidth}
@@ -292,15 +450,9 @@ Für die Antriebsspannung $U_{Antrieb}$ wurde der Wert $(190.5 \pm 0.2)$\,mV ein
 	  \caption{Gefittete Werte des Spektrums}
 	  \label{fig:werte25gerade}
   \end{subfigure}
-	\caption{Gefittetes Mößbauerspektrum von einer mit zwei Stabmagneten ausgerichteten \(\SI{25}{\micro\meter}\)-Eisenfolie}
-	\label{fig:magnetgerade}
-\end{figure}
-
-\begin{figure}[ht]
-	\centering
 	\begin{subfigure}[b]{0.5\textwidth}
 		\includegraphics[width=\textwidth]{MoessbauerEisen25MagnetRing}
-	  \caption{Mößbauerspektrum}
+	  \caption{Gefittetes Mößbauerspektrum von einer mit zwei Ringmagneten ausgerichteten \(\SI{25}{\micro\meter}\)-Eisenfolie}
 	  \label{fig:moess25ring}
   \end{subfigure}
   \begin{subfigure}[b]{0.4\textwidth}
@@ -308,8 +460,8 @@ Für die Antriebsspannung $U_{Antrieb}$ wurde der Wert $(190.5 \pm 0.2)$\,mV ein
 	  \caption{Gefittete Werte des Spektrums}
 	  \label{fig:werte25ring}
   \end{subfigure}
-	\caption{Gefittetes Mößbauerspektrum von einer mit zwei Ringmagneten ausgerichteten \(\SI{25}{\micro\meter}\)-Eisenfolie}
-	\label{fig:magnetring}
+	\caption{Gefittetes Mößbauerspektrum von Eisenfolien mit Schwankungen von B (endgültiges Modell)}
+	\label{fig:eisen}
 \end{figure}
 
 \subsection{Anpassungen des Modells für Eisen}
@@ -333,36 +485,65 @@ Für die Auswertung wird das Programm Moessfit verwendet. Eine Ansicht der stand
 
 \subsubsection{Anpassung auf ein rein magnetisches Feld}
 
-Um die Bilder \ref{fig:eisen4x3}, \ref{fig:eisen25}, \ref{fig:magnetgerade} und \ref{fig:magnetring} auszuwerten, muss das verwendete Modell und damit die Fitparameter angepasst werden. Dafür ist zunächst die Beobachtung hilfreich, das wir bei allen Diagrammen 6 Peaks sehen. Dabei sind die Peaks in der Größe geordnet: Die größten liegen außen, die kleinsten innen. Diese Peaks entsprechen also sehr gut denen in Bild \ref{fig:graphmoessbauer}(a). Es ist also davon auszugehen, dass für die Auswertung die Einflüsse des elektrischen Feldes weitestgehend ignoriert werden können - damit werden die Parameter \textit{Vzz} und \textit{eta} nicht mehr benötigt. Mit der Definition, dass das betrachtete B-Feld entlang der z-Achse verläuft, können auch \textit{theta} und \textit{phi} auf null gesetzt und in Folge ignoriert werden. Mit diesen Definitionen spielt \textit{gamma} keine Rolle mehr und kann ignoriert werden. Benötigt werden also weiterhin: \textit{B}, \textit{CS}, \textit{omega}, \textit{I0}, \textit{A0} und \textit{beta}. 
+Um die Bilder \ref{fig:eisenoA} auszuwerten, muss das verwendete Modell und damit die Fitparameter angepasst werden. Dafür ist zunächst die Beobachtung hilfreich, das wir bei allen Diagrammen 6 Peaks sehen. Dabei sind die Peaks in der Größe geordnet: Die größten liegen außen, die kleinsten innen. Diese Peaks entsprechen also sehr gut denen in Bild \ref{fig:graphmoessbauer}(a). Es ist also davon auszugehen, dass für die Auswertung die Einflüsse des elektrischen Feldes weitestgehend ignoriert werden können - damit werden die Parameter \textit{Vzz} und \textit{eta} nicht mehr benötigt. Die in kleinen Gruppen ausgerichteten Eisenatome erzeugen aber durchaus ein Magnetfeld und die Interaktion mit diesem erzeugt die 6 Peaks. Der Literaturwert dieses natürlichen lokalen Magnetfeldes ist \SI{33.3}{\tesla}. Mit der Definition, dass das betrachtete B-Feld entlang der z-Achse verläuft, können auch \textit{theta} und \textit{phi} auf null gesetzt und in Folge ignoriert werden. Mit diesen Definitionen spielt \textit{gamma} keine Rolle mehr und kann ignoriert werden. Benötigt werden also weiterhin: \textit{B}, \textit{CS}, \textit{omega}, \textit{I0}, \textit{A0} und \textit{beta}. 
 
 \subsubsection{Einfluss der Probendicke}
 
-Nun muss betrachtet werden, was gemessen werden soll: Gesucht werden die Einflüsse der Probendicke und der Ausrichtung der Magnetfelder der Atome im Eisen. Um den Einfluss der Probendicke deutlicher zu machen, liefert Moessfit die Möglichkeit, statt der Fläche \textit{A0} das Transmissionsintegral \textit{ta} auszugeben. Dieses beschreibt direkt den Einfluss der Probendicke: Je größer \textit{ta} wird, desto stärker absorbieren die kleinen Peaks im Diagramm im Vergleich zu den großen. Für weitere Berechnungen schließt das Programm aus \textit{ta} auf \textit{A0}. 
+Nach diesen Anpassungen sind die Bilder \ref{fig:eiseneA} zu sehen. Es ist deutlich erkennbar, dass der Fit nicht mehr mit den Werten übereinstimmt. Um dies zu beheben, muss zunächst betrachtet werden, was gemessen werden soll: Gesucht werden die Einflüsse der Probendicke und der Ausrichtung der Magnetfelder der Atome im Eisen. Um den Einfluss der Probendicke deutlicher zu machen und das Programm in diese Richtung zu sensibilisieren, liefert Moessfit die Möglichkeit, das Transmissionsintegral \textit{ta} zu berechnen. Dieses beschreibt direkt den Einfluss der Probendicke: Je größer \textit{ta} wird, desto stärker absorbieren die kleinen Peaks im Diagramm im Vergleich zu den großen. 
 
 \subsubsection{Ausrichtung des Magnetfelds der Atome}
 
-Um die  Ausrichtung der Magnetfelder der Eisen-Atome deutlich zu machen, wird \textit{beta} transformiert zu \textit{fraglong}, was für den Anteil der Eisen-Atome steht, deren Magnetfeld parallel zum Strahl der Photonen steht. Im Anschluss werden die Atome, die parallel zum Photonenstrahl stehen und die, die senkrecht dazu stehen, getrennt betrachtet: Ihr Anteil an \textit{A0} des Graphen wird getrennt ausgerechnet und anschließend addiert. Damit wird der mittlere Winkel der Atome \textit{beta} nicht mehr gebraucht. 
+Das Ergebnis der Anpassung nach \textit{ta} ist in den Bildern \ref{fig:eisenta} zu sehen. Der Fit stimmt eindeutig besser mit den Werten überein, die Berechnung von \textit{ta} hat also das Modell verbessert. Um nun auch die Ausrichtung der Magnetfelder der Eisen-Atome zu berechnen und deutlich zu machen, wird \textit{beta} transformiert zu \textit{fraglong}, was für den Anteil der Eisen-Atome steht, deren Magnetfeld parallel zum Strahl der Photonen steht. Im Anschluss werden die Atome, die parallel zum Photonenstrahl stehen und die, die senkrecht dazu stehen, getrennt betrachtet: Ihr Anteil an \textit{A0} des Graphen wird getrennt ausgerechnet und anschließend addiert. Damit wird der mittlere Winkel der Atome \textit{beta} nicht mehr gebraucht. 
 
 \subsubsection{Variation des Magnetfeldes}
 
-Dieses Modell beschreibt bereits einen großen Teil der Daten, hat aber noch eine Schwäche: Bei der Betrachtung des Mößbauerspektrums der mit einem äußeren Magnetfeld ausgerichteten Eisen-Atome zeigt sich, dass die mittleren Peaks vom Modell als kleiner berechnet werden, als sie im Bild zu sehen sind. Grund dafür ist die Annahme, dass das Magnetfeld überall konstant ist. Durch das Anlegen eines äußeren Feldes ist diese Annahme jedoch nicht mehr richtig. Daher werden zwei zusätzliche Parameter eingeführt, die eine Beschreibung des realen Magnetfeldes als Normalverteilung erlauben: \textit{B0} und \textit{sigma}. Formel \ref{for:normal} zeigt die Nutzung der Parameter. Für \textit{B0} wird das normale magnetische Feld im Eisen, also \SI{33.3}{\tesla}, gewählt.
+Der Einfluss der vorgenommenen Änderungen kann in Bild \ref{fig:eisenfr} gesehen werden. Dieses Modell beschreibt bereits einen großen Teil der Daten, hat aber noch eine Schwäche: Bei der Betrachtung des Mößbauerspektrums der mit einem äußeren Magnetfeld ausgerichteten Eisen-Atome zeigt sich, dass die mittleren Peaks vom Modell als kleiner berechnet werden, als sie im Bild zu sehen sind. Grund dafür ist die Annahme, dass das Magnetfeld überall konstant ist. Durch das Anlegen eines äußeren Feldes ist diese Annahme jedoch nicht mehr richtig. Daher werden zwei zusätzliche Parameter eingeführt, die eine Beschreibung des realen Magnetfeldes als Normalverteilung erlauben: \textit{B0} und \textit{sigma}. Formel \ref{for:normal} zeigt die Nutzung der Parameter. Für \textit{B0} wird das normale magnetische Feld im Eisen, also \SI{33.3}{\tesla}, gewählt.
 \begin{align}
 B_{Feld} = e^{-\frac{B-B0}{2sigma^2}} \label{for:normal}
 \end{align} 
-Für das verwendete Modell werden also die Parameter \textit{B}, \textit{CS}, \textit{omega}, \textit{I0}, \textit{ta}, \textit{fraglong}, \textit{B0} und \textit{sigma} verwendet. Die Ergebnisse können in den Bildern \ref{fig:eisen4x3}, \ref{fig:eisen25}, \ref{fig:magnetgerade} und \ref{fig:magnetring} gesehen werden.
+Für das verwendete Modell werden also die Parameter \textit{B}, \textit{CS}, \textit{omega}, \textit{I0}, \textit{ta}, \textit{fraglong}, \textit{B0} und \textit{sigma} verwendet. Die Ergebnisse können in den Bildern \ref{fig:eisen} gesehen werden, ihre Werte sind in den Tabellen \ref{tab:werteeisen1} und \ref{tab:werteeisen2} zusammengefasst.
 
 \subsection{Beschreibung und Erklärung der Beobachtungen für Eisen}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}[h]{l|c|c|c}
+Eisenfolie & \textit{CS} [mm/s] & \textit{I0} [counts] & \textit{ta} \\ \hline 
+4x\SI{3}{\micro\meter} & -0,1122 $\pm$ 0,0018 & 16846 $\pm$ 7 & 4,51 $\pm$ 0,06 \\ \hline
+\SI{25}{\micro\meter} & -0,1127 $\pm$ 0,0014 & 11939 $\pm$ 6 & 7,44 $\pm$ 0,08  \\ \hline
+\SI{25}{\micro\meter} mit & \multirow{2}{*}{-0,1115 $\pm$ 0,0021} & \multirow{2}{*}{9554 $\pm$ 5} & \multirow{2}{*}{6,21 $\pm$ 0,08} \\ 
+Stabmagneten & & & \\ \hline
+\SI{25}{\micro\meter} mit & \multirow{2}{*}{-0,1091 $\pm$ 0,0016} & \multirow{2}{*}{8873 $\pm$ 5} & \multirow{2}{*}{8,08 $\pm$ 0,10} \\  
+Ringmagneten & & & 
+\end{tabular}
+\caption{1. Teil der Werte mit Fehlern der Mößbauerspektren der Eisenfolien}
+\label{tab:werteeisen1}
+\end{table}
+\begin{table}[ht]
+\centering
+\begin{tabular}[h]{l|c|c|c}
+Eisenfolie & \textit{fraglong} & \textit{B0} [T] & \textit{sigma} \\ \hline 
+4x\SI{3}{\micro\meter} & 0,170 $\pm$ 0,011 & 33,294 $\pm$ 0,013 & -0,2 $\pm$ -1,0 \\ \hline
+\SI{25}{\micro\meter} &  0,273 $\pm$ 0,009 & 33,305 $\pm$ 0,011 & 0,225 $\pm$ 0,035 \\ \hline
+\SI{25}{\micro\meter} mit & \multirow{2}{*}{0,063 $\pm$ 0,012} & \multirow{2}{*}{33,066 $\pm$ 0,019} & \multirow{2}{*}{0,48 $\pm$ 0,04} \\ 
+Stabmagneten & & & \\ \hline
+\SI{25}{\micro\meter} mit & \multirow{2}{*}{0,185 $\pm$ 0,011} & \multirow{2}{*}{33,216 $\pm$ 0,012} & \multirow{2}{*}{0,19 $\pm$ 0,05} \\  
+Ringmagneten & & & 
+\end{tabular}
+\caption{2. Teil der Werte mit Fehlern der Mößbauerspektren der Eisenfolien}
+\label{tab:werteeisen2}
+\end{table}
 
 Zunächst werden die Peaks in Moessfit vermessen und mit der Nulllinie \textit{I0} verglichen. Daraus ergeben sich Absorptionsraten für jeden Peak, die in Tabelle \ref{tab:absorption} zu sehen sind.
 
 \begin{table}[ht]
 \centering
 \begin{tabular}[h]{l|c|c|c}
-& Innere Peaks [\%] & Mittlere Peaks [\%] & Äußere Peaks [\%] \\ \hline
-\SI{25}{\micro\meter}-Eisenfolie & 9,99 & 18,65 & 22,17 \\ \hline
-4x\SI{3}{\micro\meter}-Eisenfolie & 5,92 & 14,23 & 14,48 \\ \hline
-\SI{25}{\micro\meter}-Eisenfolie mit geradem Magnet & 7,21 & 18,97 & 15,64 \\ \hline
-\SI{25}{\micro\meter}-Eisenfolie mit Ringmagnet & 10,13 & 21,59 & 22,51
+Eisenfolie|Peaks & Innere Peaks [\%] & Mittlere Peaks [\%] & Äußere Peaks [\%] \\ \hline
+4x\SI{3}{\micro\meter} & 5,92 & 14,23 & 14,48 \\ \hline
+\SI{25}{\micro\meter} & 9,99 & 18,65 & 22,17 \\ \hline
+\SI{25}{\micro\meter} mit Stabmagneten & 7,21 & 18,97 & 15,64 \\ \hline
+\SI{25}{\micro\meter} mit Ringmagneten & 10,13 & 21,59 & 22,51
 \end{tabular}
 \caption{Absorption der Peaks in \%}
 \label{tab:absorption}
@@ -372,25 +553,51 @@ Aus der Tabelle sind verschiedene Dinge zu entnehmen:
 \begin{enumerate}
 \item Die \SI{25}{\micro\meter}-Eisenfolie absorbiert stärker als die 4x\SI{3}{\micro\meter}-Eisenfolie
 \item Keine der Folien zeigt das "`normale"' Verhalten, wonach die Linien die Größenverhältnisse 1:2:3 haben sollten. Die \SI{25}{\micro\meter}-Eisenfolie zeigt ein 1:1,87:2,22, die 4x\SI{3}{\micro\meter}-Eisenfolie ein 1:2,40:2,45 Verhalten
-\item Wenn die \SI{25}{\micro\meter}-Eisenfolie mit einem geraden Magneten geordnet wird, sinken die Absorption des ersten und dritten Peaks um 25\,\%, während die des zweiten Peaks annähernd gleich bleibt
-\item Die Beeinflussung der \SI{25}{\micro\meter}-Eisenfolie durch einen Ringmagneten führt zu einer höheren Absorption des zweiten Peaks
+\item Wenn die \SI{25}{\micro\meter}-Eisenfolie mit Stabmagneten geordnet wird, sinken die Absorption des ersten und dritten Peaks um 25\,\%, während die des zweiten Peaks annähernd gleich bleibt
+\item Die Beeinflussung der \SI{25}{\micro\meter}-Eisenfolie durch zwei Ringmagnete führt zu einer höheren Absorption des zweiten Peaks
 \end{enumerate}
 Der erste Punkt lässt sich über \textit{ta} quantifizieren: Während die \SI{25}{\micro\meter}-Eisenfolie einen \textit{ta}-Wert von 7,4422 aufweist, hat die 4x\SI{3}{\micro\meter}-Eisenfolie einen Wert von 4,5057, also etwa 40\,\% weniger. Diese Abweichung stimmt sehr gut mit den ersten Peaks beider Folien überein, die ebenfalls eine Abweichung von etwa 40\,\% zeigen. Beim dritten Peak ist der Unterschied schon größer, hier ist der Peak der 4x\SI{3}{\micro\meter}-Eisenfolie nur etwa 35\,\% kleiner als der der \SI{25}{\micro\meter}-Eisenfolie. Beim zweiten Peak gibt es einen deutlichen Unterschied, der Peak der 4x\SI{3}{\micro\meter}-Eisenfolie ist nur etwa 24\,\% kleiner als der der \SI{25}{\micro\meter}-Eisenfolie. Für diese Abweichungen dürfte es zwei Gründe geben:
 \begin{itemize}
-\item Da die \SI{25}{\micro\meter}-Eisenfolie mehr als dopplet so dick wie die 4x\SI{3}{\micro\meter}-Eisenfolie ist, tritt der Effekt der nicht zu vernachlässigenden Probendicke deutlicher zu Tage. Die \SI{25}{\micro\meter}-Eisenfolie hat eine Flächendichte von \SI{19.7}{\milli\gram\per\square\centi\meter}, die 4x\SI{3}{\micro\meter}-Eisenfolie \SI{9.4}{\milli\gram\per\square\centi\meter} - berechnet wird dies mit dem Wissen, dass Eisen eine Dichte von \SI{7.874}{\gram\per\cubic\centi\meter} hat \cite{eisen}. Daher wird der dritte Peak bei der \SI{25}{\micro\meter}-Eisenfolie stärker niveliert als bei der 4x\SI{3}{\micro\meter}-Eisenfolie
-\item Dadurch, dass die 4x\SI{3}{\micro\meter}-Eisenfolie aus vier sehr dünnen \SI{3}{\micro\meter}-Folien besteht, ist die Ausrichtung der Magnetfelder der Atome nicht mehr zufällig wie in einer optimalen Pulverprobe. Die Wahrscheinlichkeit, dass die Magnetfelder senkrecht zum Photonenstrahl ausgerichtet sind, ist viel höher. Der Vergleich der fraglong-Werte beider Folien bestätigt diese Überlegung: Während die \SI{25}{\micro\meter}-Eisenfolie einen fraglong-Wert von 0,2733 erreicht, hat die 4x\SI{3}{\micro\meter}-Eisenfolie einen Wert von 0,1702. Bei einem optimalen Pulver müssten alle Raumrichtungen gleich stark vertreten sein, also die Ebene senkrecht zum Strahl 0,6667 und die Linie parallel zum Strahl 0,3333 erreichen. Von fraglong = 0,3333 weichen aber beide Folien ab, die 4x\SI{3}{\micro\meter}-Eisenfolie sogar deutlich
+\item Da die \SI{25}{\micro\meter}-Eisenfolie mehr als doppelt so dick wie die 4x\SI{3}{\micro\meter}-Eisenfolie ist, tritt der Effekt der nicht zu vernachlässigenden Probendicke deutlicher zu Tage. Die \SI{25}{\micro\meter}-Eisenfolie hat eine Flächendichte von \SI{19.7}{\milli\gram\per\square\centi\meter}, die 4x\SI{3}{\micro\meter}-Eisenfolie \SI{9.4}{\milli\gram\per\square\centi\meter} - berechnet wird dies mit dem Wissen, dass Eisen eine Dichte von \SI{7.874}{\gram\per\cubic\centi\meter} hat \cite{eisen}. Daher wird der dritte Peak bei der \SI{25}{\micro\meter}-Eisenfolie stärker nivelliert als bei der 4x\SI{3}{\micro\meter}-Eisenfolie
+\item Dadurch, dass die 4x\SI{3}{\micro\meter}-Eisenfolie aus vier sehr dünnen \SI{3}{\micro\meter}-Folien besteht, ist die Ausrichtung der Magnetfelder der Atome nicht mehr zufällig wie in einer optimalen Pulverprobe. Die Wahrscheinlichkeit, dass die Magnetfelder senkrecht zum Photonenstrahl ausgerichtet sind, ist viel höher. Der Vergleich der \textit{fraglong}-Werte beider Folien bestätigt diese Überlegung: Während die \SI{25}{\micro\meter}-Eisenfolie einen \textit{fraglong}-Wert von 0,2733 erreicht, hat die 4x\SI{3}{\micro\meter}-Eisenfolie einen Wert von 0,1702. Bei einem optimalen Pulver müssten alle Raumrichtungen gleich stark vertreten sein, also die Ebene transversal zum Strahl 0,6667 und die Linie longitudinal zum Strahl 0,3333 erreichen. Von \textit{fraglong} = 0,3333 weichen aber beide Folien ab, die 4x\SI{3}{\micro\meter}-Eisenfolie sogar deutlich
 \end{itemize}
-Diese Erkenntnisse erklären auch direkt den zweiten Punkt: Da beide Folien dicker als die vom Modell erlaubten \SI{1}{\milli\gram\per\square\centi\meter} sind, findet eine signifikante Nivelierung der zweiten und dritten Peaks im Vergleich zum ersten statt. Die große Abweichung des zweiten Peaks der 4x\SI{3}{\micro\meter}-Eisenfolie wiederum lässt sich durch die stärkere Ordnung in der Folie im Vergleich zur \SI{25}{\micro\meter}-Eisenfolie erklären. Der zweite Peak wird also offenbar durch eine stärkere Anordnung in die Richtung senkrecht zum Photonenstrahl verstärkt.
+Diese Erkenntnisse erklären auch direkt den zweiten Punkt: Da beide Folien dicker als die vom Modell erlaubten \SI{1}{\milli\gram\per\square\centi\meter} sind, findet eine signifikante Nivellierung der zweiten und dritten Peaks im Vergleich zum ersten statt. Die große Abweichung des zweiten Peaks der 4x\SI{3}{\micro\meter}-Eisenfolie wiederum lässt sich durch die stärkere Ordnung in der Folie im Vergleich zur \SI{25}{\micro\meter}-Eisenfolie erklären. Der zweite Peak wird also offenbar durch eine stärkere Anordnung in die Richtung senkrecht zum Photonenstrahl verstärkt.
 
-Für die Erklärung der massiven Abweichung der Absorption bei der \SI{25}{\micro\meter}-Eisenfolie mit geradem Magnet im Vergleich zur Absorption der \SI{25}{\micro\meter}-Eisenfolie ohne Magnet muss ebenfalls auf die Ordnung der Magnetfelder geschaut werden: Das äußere Magnetfeld führt zu einem \textit{fraglong}-Wert von 0,0634. Dies führt zu dem im Vergleich zu den anderen beiden Peaks so großen zweiten Peak. Da hier aber mit \SI{25}{\micro\meter}-Eisenfolie ohne Magnet ein Verglich vorliegt, kann vermutet werden, dass die Erhöhung der Ordnung nicht nur zu einer Steigerung der Absorption des zweiten Peaks, sondern auch zu einer Senkung bei den beiden anderen Peaks führt.
+Für die Erklärung der massiven Abweichung der Absorption bei der \SI{25}{\micro\meter}-Eisenfolie mit Stabmagneten im Vergleich zur Absorption der \SI{25}{\micro\meter}-Eisenfolie ohne Magnet muss ebenfalls auf die Ordnung der Magnetfelder geschaut werden: Das äußere Magnetfeld führt zu einem \textit{fraglong}-Wert von 0,0634. Dies führt zu dem im Vergleich zu den anderen beiden Peaks so großen zweiten Peak.
+
+Eine interessante Beobachtung ist, dass die Ausrichtung der Eisenfolien zu einer anderen effektiven Dicke der Folien führen: So gibt Moessfit im Vergleich zur \SI{25}{\micro\meter}-Eisenfolie ohne Magnet für die \SI{25}{\micro\meter}-Eisenfolie mit Stabmagneten einen etwa 16,5\,\% kleineren und für die \SI{25}{\micro\meter}-Eisenfolie mit Ringmagneten einen etwa 8,5\,\% höheren Wert von \textit{ta} aus.
+
+Zu guter Letzt wird die Auswirkung der Schwankung des Magnetfeldes beachtet. Dafür werden die \textit{sigma}-Werte verglichen: Diese sind zwischen den beiden nicht-magnetisierten Folien mit einer Abweichung der 4x\SI{3}{\micro\meter}-Eisenfolie um +3,7\,\% im Vergleich zur \SI{25}{\micro\meter}-Eisenfolie ohne Magnet nahezu gleich (da \textit{sigma} quadratisch eingeht, spielt das Vorzeichen keine Rolle), weichen aber stark ab, sobald die Folien magnetisiert werden. Die \SI{25}{\micro\meter}-Eisenfolie mit Stabmagneten erreicht einen Wert von +113,3\,\%, die \SI{25}{\micro\meter}-Eisenfolie mit Ringmagneten von -15,8\,\%. Damit schwankt das effektive Magnetfeld in der \SI{25}{\micro\meter}-Eisenfolie mit Stabmagneten mehr als doppelt so stark wie in der \SI{25}{\micro\meter}-Eisenfolie ohne Magnet, während die Schwankung bei der \SI{25}{\micro\meter}-Eisenfolie mit Ringmagneten geringer ausfällt. Diese Schwankungen können die Absorptionsunterschiede zu den unmagnetisierten Eisenfolien im ersten und dritten Peak erklären: Demnach würde eine geringere Schwankung des Magnetfeldes, wie sie mit den Ringmagneten realisiert ist, zu einer Erhöhung der Absorption führen, während eine höhere Schwankung zu einer Abschwächung der Absorption führen würde.
+
+Die Isomerieverschiebung hingegen ändert sich weder durch eine veränderte Dicke noch durch das Anlegen eines Magnetfeldes und schwankt zwischen -0,10914 und -0,11268, was einem Mittelwert von -0,11091 und einer Abweichung von diesem um $\pm$1,6\,\% entspricht. 
 
 \subsection{Anpassungen des Modells für Ferrocen}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}[h]{c|c|c|c|c|c}
+\textit{Vzz} [\SI{}{\volt\per\square\angstrom}] & \textit{CS} [mm/s] & \textit{omega} [mm/s] & \textit{I0} [counts] & \textit{A0} & \textit{beta} \\ \hline
+145,2 $\pm$ 0,5 & 0,3301 $\pm$ 0,0038 & 0,120 $\pm$ 0,006 & 10144 $\pm$ 6 & 619 $\pm$ 27 & 51,6 $\pm$ -1,0
+\end{tabular}
+\caption{Werte mit Fehlern des Mößbauerspektrums von Ferrocen}
+\label{tab:werteferrocen}
+\end{table}
 
 \begin{figure}[ht]
 	\centering
 	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{MoessbauerFerrocenoA}
+	  \caption{Mößbauerspektrum von Ferrocen ohne Anpassung}
+	  \label{fig:moessferrocenoA}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\textwidth}
+	  \includegraphics[width=\textwidth]{WerteFerrocenoA}
+	  \caption{Gefittete Werte des Spektrums}
+	  \label{fig:werteferrocenoA}
+  \end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
 		\includegraphics[width=\textwidth]{MoessbauerFerrocen}
-	  \caption{Mößbauerspektrum}
+	  \caption{Mößbauerspektrum von Ferrocen mit Anpassung auf reines elektrisches Feld}
 	  \label{fig:moessferrocen}
   \end{subfigure}
   \begin{subfigure}[b]{0.4\textwidth}
@@ -398,13 +605,34 @@ Für die Erklärung der massiven Abweichung der Absorption bei der \SI{25}{\micr
 	  \caption{Gefittete Werte des Spektrums}
 	  \label{fig:werteferrocen}
   \end{subfigure}
-	\caption{Gefittetes Mößbauerspektrum von Ferrocen}
+	\caption{Gefittetes Mößbauerspektrum von Ferrocen mit und ohne Anpassung}
+	\label{fig:ferrocen}
 \end{figure}
 
-Für Ferrocen muss das Modell eine andere Anpassung erfahren: Bei einer Betrachtung der Messwerte wird deutlich, dass nur zwei Peaks zu sehen sind. Diese stimmen sehr gut mit den beiden Peaks in Bild \ref{fig:graphmoessbauer}(b) überein. Daher liegt der Gedanke nahe, dass hier das Magnetfeld irrelevant ist und dafür das elektrische Feld betrachtet werden muss. Es werden also folgende Anpassungen vorgenommen: B wird aus genanntem Grund auf null gesetzt. eta wird ebenfalls als null angenommen, da von einem symmetrischen Feld ausgegangen werden kann. Parallel zu den Anpassungen oben können auch theta und phi null gesetzt werden, und wie oben wird damit auch gamma irrelevant. Da weder die Probendicke noch die Ausrichtung der Ferrocen-Moleküle weitergehend untersucht werden sollen, können diese Änderungen als vollständig angenommen werden. Es werden also folgende Parameter verwendet: Vzz, CS, omega, I0, A0 und beta.
+Für Ferrocen muss das Modell eine andere Anpassung erfahren: Bei einer Betrachtung der Messwerte wird deutlich, dass nur zwei Peaks zu sehen sind. Diese stimmen sehr gut mit den beiden Peaks in Bild \ref{fig:graphmoessbauer}(b) überein. Daher liegt der Gedanke nahe, dass hier das Magnetfeld irrelevant ist und dafür das elektrische Feld betrachtet werden muss. Es werden also folgende Anpassungen vorgenommen: \textit{B} wird aus genanntem Grund auf null gesetzt. \textit{eta} wird ebenfalls als null angenommen, da von einem symmetrischen Feld ausgegangen werden kann. Parallel zu den Anpassungen oben können auch \textit{theta} und \textit{phi} null gesetzt werden, und wie oben wird damit auch gamma irrelevant. Da weder die Probendicke noch die Ausrichtung der Ferrocen-Moleküle weitergehend untersucht werden sollen, können diese Änderungen als vollständig angenommen werden. Es werden also folgende Parameter verwendet: \textit{Vzz}, \textit{CS}, \textit{omega}, \textit{I0}, \textit{A0} und \textit{beta}.
 
-\section{Fazit}
+Ferrocen besteht aus zwei Cyclopentadienyl-Ringen und einem Eisenkern dazwischen. Dieser Eisenkern gibt seine 2 delokalisierten 4s-Elektronen an die beiden Ringe ab und ist somit ein Fe\textsuperscript{2+}. Zusätzlich zu den von Eisen abgegebenen Elektronen hat jeder Ring 5 freie Valenzelektronen. Aus diesen Überlegungen wurde folgendes weiter vereinfachtes Modell entwickelt:
+Oberhalb und unterhalb des Eisenkerns befinden sich im Abstand \textit{R} Punktladungen mit 6-facher Elementarladung. Das Fe\textsuperscript{2+} ist unsere lokale Sonde und erzeugt in diesem Modell kein elektrisches Feld.
+Somit folgt für das Feld im Modell:
 
+Das Eisen hat nun aber die 2-fache positive Elementarladung. Er „spürt“ das elektrische Feld doppelt so stark. Das elektrische Feld ist somit um den Faktor 2 nach zu skalieren.
+
+Für das elektrische Feld folgt hiermit:
+
+Damit lässt sich die Komponente Vzz des elektrischen Feldtensors berechnen
+Vzz =
+
+Formelwust
+
+\begin{align*}
+R = \SI[separate-uncertainty = true]{168.23(18)}{\pico\meter}
+\end{align*}
+
+Trotz des stark vereinfachten Modells ergibt sich ein Wert, der erstaunlich nahe am Literaturwert $R = \SI{166}{\pico\meter}$ liegt. Die Unsicherheit des Wertes ist auch sehr klein, jedoch wurde diese lediglich aus der Fitunsicherheit abgeleitet. Viele Abweichungen, die durch das vereinfachte Modell entstehen wurden hier nicht berücksichtigt. Eine weitere mögliche Verbesserung des Modells wäre ein Skalierungsfaktor, der die Abschirmung des Kerns durch die eigenen Elektronen beschreibt.
+
+\section{Diskussion}
+
+\subsection{Fazit}
 
 
 %------------------------

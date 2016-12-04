@@ -22,7 +22,7 @@ rho = exp(-(B-B0)^2/(2*sigma^2))
 COMMANDS
 #A A0
 I0 I0
-MaxIter 100000
+MaxIter 5000
 Errors Hesse
 #ForceSimplex
 #ConvergenceCriterium 0.01
@@ -34,26 +34,11 @@ TransmissionIntegral ta 0.0515 0.0485 0.5
 #Nucleus Egamma g12 g32 Q mass
 ###############################################################
 RUN
-"25EisenMoessbauer.fld" 1
-"4x3EisenMoessbauer2.fld" 2
+"P:\Studium\Fortgeschrittenen_Praktikum\FP_MBS\Moessbauer\4x3EisenMoessbauer2.fld" 1
+"25EisenMoessbauer.fld" 2
 "25EisenMoessbauerMagnet1.fld" 3
 "25EisenMoessbauerMagnetRing.fld" 4
 ###############################################################
 PLOT
 runs 1 2 3 4
 ###############################################################
-###############################################################
-FITDATA
-           T[K]	              B	          Error	             CS	          Error	          omega	          Error	             I0	          Error	             ta	          Error	       fraglong	          Error	             B0	          Error	          sigma	          Error	
-           1.00	          34.60	           0.00	       -0.11268	        0.02000	        0.07000	        0.00000	       11939.19	         119.34	         7.4422	         0.1000	         0.2733	         0.1000	        33.3048	         0.1000	        0.22454	        0.01000	
-           2.00	          34.60	           0.00	       -0.11218	        0.02000	        0.07000	        0.00000	       16845.65	         168.28	         4.5057	         0.1000	         0.1702	         0.1000	        33.2938	         0.1000	       -0.23276	        0.01000	
-           3.00	          34.60	           0.00	       -0.11149	        0.02000	        0.07000	        0.00000	        9553.80	          95.76	         6.2107	         0.1000	         0.0634	         0.1000	        33.0664	         0.1000	        0.47890	        0.01000	
-           4.00	          34.60	           0.00	       -0.10914	        0.02000	        0.07000	        0.00000	        8872.91	          88.74	         8.0791	         0.1000	         0.1846	         0.1000	        33.2162	         0.1000	        0.18908	        0.01000	
-###################
-FITSTATISTICS
-Total chi2: 2260.142697
-           T[K]	       chi2_red	 K-S-confidence	       MEM-diff	     MEM-lambda	 MEM-iterations
-           1.00	           1.12	          0.957	          0.000	          0.000	              0
-           2.00	           1.00	          0.566	          0.000	          0.000	              0
-           3.00	           1.23	          0.695	          0.000	          0.000	              0
-           4.00	           1.15	          0.753	          0.000	          0.000	              0
